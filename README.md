@@ -1,2 +1,2 @@
 # objectDetection-android
-BackEnd Language: Java
+Java
