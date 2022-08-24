@@ -44,6 +44,7 @@ public class CameraActivity extends Activity implements CameraBridgeViewBase.CvC
                 {
                     super.onManagerConnected(status);
 
+                    //Serkan VARIŞLI
                 }
                 break;
             }
@@ -59,8 +60,8 @@ public class CameraActivity extends Activity implements CameraBridgeViewBase.CvC
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
-        int MY_PERMISSIONS_REQUEST_CAMERA=1;
+        // kamera açma
+        int MY_PERMISSIONS_REQUEST_CAMERA=0;
         // if camera permission is not given it will ask for it on device
         if (ContextCompat.checkSelfPermission(CameraActivity.this, Manifest.permission.CAMERA)
                 == PackageManager.PERMISSION_DENIED){
@@ -68,7 +69,7 @@ public class CameraActivity extends Activity implements CameraBridgeViewBase.CvC
         }
 
         setContentView(R.layout.activity_camera);
-
+        //model ve stringler çekilerek nesnenin ne olduğunun belirtilmesi
         mOpenCvCameraView=(CameraBridgeViewBase) findViewById(R.id.frame_Surface);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);

@@ -37,7 +37,7 @@
         android:layout_width="172dp"
         android:layout_height="56dp"
         android:backgroundTint="#00FFEB3B"
-        android:text="GALERİ RESİM SINIFLA"
+        android:text="RESİM SINIFLA"
         android:textColor="#615555"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

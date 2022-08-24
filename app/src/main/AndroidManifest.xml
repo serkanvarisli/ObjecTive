@@ -27,7 +27,8 @@
         android:theme="@style/Theme.ImagePro">
         <activity android:name="com.example.DetecTive.CameraActivity"></activity>
         <activity android:name="com.example.DetecTive.galeri"></activity>
-        <activity android:name="com.example.DetecTive.Giris">
+        <activity android:name="com.example.DetecTive.Giris"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

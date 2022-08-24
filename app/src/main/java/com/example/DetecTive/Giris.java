@@ -22,7 +22,7 @@ public class Giris extends AppCompatActivity {
             Log.d("MainActivity: ","Opencv failed to load");
         }
     }
-
+    //Serkan VARIŞLI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -27,31 +27,32 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class objectDetectorClass {
-    // should start from small letter
 
-    // this is used to load model and predict
+
+
     private Interpreter interpreter;
-    // store all label in array
+
     private List<String> labelList;
     private int INPUT_SIZE;
     private int PIXEL_SIZE=3; // for RGB
     private int IMAGE_MEAN=0;
     private  float IMAGE_STD=255.0f;
-    // use to initialize gpu in app
+
     private GpuDelegate gpuDelegate;
     private int height=0;
     private  int width=0;
 
+    // MODEL HAZIR ALINDI
     objectDetectorClass(AssetManager assetManager,String modelPath, String labelPath,int inputSize) throws IOException{
         INPUT_SIZE=inputSize;
-        // use to define gpu or cpu // no. of threads
+
         Interpreter.Options options=new Interpreter.Options();
         gpuDelegate=new GpuDelegate();
         options.addDelegate(gpuDelegate);
         options.setNumThreads(4); // set it according to your phone
-        // loading model
+
         interpreter=new Interpreter(loadModelFile(assetManager,modelPath),options);
-        // load labelmap
+
         labelList=loadLabelList(assetManager,labelPath);
 
 

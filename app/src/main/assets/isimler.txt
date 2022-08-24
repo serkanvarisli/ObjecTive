@@ -2,20 +2,20 @@ insan
 bisiklet
 araba
 motorbisiklet
-uçak
-otobüs
+ucak
+otobus
 tren
 kamyon
 gemi
-trafik ışığı
-yangın musluğu
+trafik ısıgı
+yangin muslugu
 ???
-dur işaret
+dur isaret
 park metre
 bank
-kuş
+kus
 kedi
-köpek
+kopek
 at
 koyun
 inek
@@ -24,13 +24,13 @@ ayı
 zebra
 zürafa
 ???
-çanta
-şemsiye
+canta
+semsiye
 ???
 ???
-el çantası
+el cantasi
 kravat
-valiz
+canta
 frizbi
 kayak
 snowboard

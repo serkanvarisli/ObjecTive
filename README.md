@@ -1,2 +1,0 @@
-# objectDetection-android
-Java
